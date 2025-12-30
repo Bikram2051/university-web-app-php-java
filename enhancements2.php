@@ -1,0 +1,135 @@
+<?php include 'header.inc'; ?>
+        <h1>JavaScript Enhancements</h1>
+
+        <section class="enhancement">
+            <h2>Enhancement 1: Product Comparison Panel</h2>
+
+            <div class="enhancement-details">
+                <div class="enhancement-info">
+                    <h3>What it does</h3>
+                    <p>Lets users select up to three home theatre systems and view their key features side-by-side in a slide-up
+                        comparison panel.</p>
+
+                    <h3>How to trigger (Interaction)</h3>
+                    <ol>
+                        <li>Open the <a href="product.php">Products page</a>.</li>
+                        <li>Click the <em>Compare</em> button beneath a product heading to add it to the panel (click again to
+                            remove).</li>
+                        <li>Up to three products can be compared at once. Click <em>Close</em> to reset.</li>
+                    </ol>
+
+                    <h3>Where implemented</h3>
+                    <ul>
+                        <li>Page: <a href="product.php">product.php</a></li>
+                        <li>Script: <code>scripts/enhancements.js</code> (section header: "Enhancement 1: Product Comparison Panel")
+                        </li>
+                    </ul>
+
+                    <h3>Why it exceeds the basics</h3>
+                    <ul>
+                        <li>Provides meaningful e-commerce interactivity beyond form validation.</li>
+                        <li>Implements dynamic DOM generation using vanilla JS only (no libraries).</li>
+                        <li>Keeps code lightweight (40–50 lines core logic).</li>
+                    </ul>
+
+                    <h3>Accessibility & UX</h3>
+                    <ul>
+                        <li>Uses simple buttons for keyboard accessibility.</li>
+                        <li>Clear affordances: "Compare" toggles to "Remove", and a persistent "Close" action resets the state.</li>
+                    </ul>
+
+                    <h3>References</h3>
+                    <ul>
+                        <li>MDN -<a target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">addEventListener</a>
+                        </li>
+                        <li>MDN -<a target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML">insertAdjacentHTML</a>
+                        </li>
+                        <li>MDN -<a target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></li>
+                    </ul>
+                </div>
+
+                <div class="enhancement-demo">
+                    <h3>Marker demo steps</h3>
+                    <ol>
+                        <li>Click <em>Compare</em> on Aurora, Nexus, and Essence.</li>
+                        <li>Observe three side-by-side cards in the bottom panel with features and price.</li>
+                        <li>Click <em>Close</em> to hide the panel and reset all buttons to <em>Compare</em>.</li>
+                    </ol>
+                    <div class="demo-note">
+                        <p><strong>Note:</strong> The panel content is built directly from each product section's DOM to avoid
+                            text-matching issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="enhancement">
+            <h2>Enhancement 2: Room Size Audio Planner</h2>
+
+            <div class="enhancement-details">
+                <div class="enhancement-info">
+                    <h3>What it does</h3>
+                    <p>Suggests the best system for a user's room size and automatically updates the enquiry form: selects the
+                        recommended product, checks suitable features, and triggers a real-time total update.</p>
+
+                    <h3>How to trigger (Interaction)</h3>
+                    <ol>
+                        <li>Open the <a href="enquire.php">Enquire page</a>.</li>
+                        <li>Choose a value in the <em>Room Size</em> dropdown (Small / Medium / Large).</li>
+                        <li>Watch the Product dropdown and recommended features update automatically, along with the Estimated
+                            Total.</li>
+                    </ol>
+
+                    <h3>Where implemented</h3>
+                    <ul>
+                        <li>Page: <a href="enquire.php">enquire.php</a> (Room Size field + recommendation message container)</li>
+                        <li>Script: <code>scripts/enhancements.js</code> (section header: "Enhancement 2: Room Size Audio Planner")
+                        </li>
+                    </ul>
+
+                    <h3>Why it exceeds the basics</h3>
+                    <ul>
+                        <li>Adds a personalised, domain-relevant planner (not generic validation).</li>
+                        <li>Integrates with the site's existing price calculator to update totals live.</li>
+                        <li>Lightweight logic (30-40 lines).</li>
+                    </ul>
+
+                    <h3>Accessibility & UX</h3>
+                    <ul>
+                        <li>Recommendation message uses <code>aria-live="polite"</code> for screen reader announcements.</li>
+                        <li>Preserves any previously selected options and only adds suggested features.</li>
+                    </ul>
+
+                    <h3>References</h3>
+                    <ul>
+                        <li>MDN - <a target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event">change event</a></li>
+                        <li>MDN - <a target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live">aria-live</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="enhancement-demo">
+                    <h3>Marker demo steps</h3>
+                    <ol>
+                        <li>Select <em>Small</em> → "Essence Series" + Smart Hub is recommended; total updates.</li>
+                        <li>Select <em>Medium</em> → "Nexus Series" + Wireless Rears; total updates.</li>
+                        <li>Select <em>Large</em> → "Aurora Series" + Wireless Rears + Professional Calibration; total updates.</li>
+                    </ol>
+                    <div class="demo-note">
+                        <p><strong>Note:</strong> Implemented with vanilla JS; no external libraries used.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="enhancement-summary">
+            <h2>Summary</h2>
+            <p>Both enhancements are coded in <code>scripts/enhancements.js</code> with clear header comments,(no libraries;
+                vanilla JS; 30–50 lines each), and add meaningful, domain-specific interactivity.</p>
+        </section>
+<?php include 'footer.inc'; ?>

@@ -1,0 +1,131 @@
+<?php include 'header.inc'; ?>
+        <h1>About the Developer</h1>
+
+        <section class="personal-info">
+            <figure class="student-photo">
+                <img src="images/student-photo.jpg" alt="Student Photo">
+                <figcaption>Web Developer & Audio Enthusiast</figcaption>
+            </figure>
+
+            <div class="student-details">
+                <dl>
+                    <dt>Name:</dt>
+                    <dd>Bikram Bhattarai</dd>
+
+                    <dt>Student Number:</dt>
+                    <dd>105974087</dd>
+
+                    <dt>Tutor's Name:</dt>
+                    <dd>Dr. Boli</dd>
+
+                    <dt>Course:</dt>
+                    <dd>COS60004 - Creating Web Applications</dd>
+
+                    <dt>Email:</dt>
+                    <dd><a href="mailto:12345678@student.swin.edu.au">12345678@student.swin.edu.au</a></dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="bio">
+            <h2>Personal Background</h2>
+            <p>I'm a passionate web development student with a deep interest in audio technology and home theatre
+                systems. Growing up in Melbourne, I was always fascinated by how technology can transform ordinary
+                spaces into immersive entertainment experiences.</p>
+
+            <p>My journey into web development began when I wanted to create a better interface for controlling my home
+                theatre setup. This passion for both technology and audio led me to pursue studies in web applications,
+                where I can combine my technical skills with my love for creating exceptional user experiences.</p>
+        </section>
+
+        <section class="hometown">
+            <h2>My Hometown - Melbourne</h2>
+            <p>Melbourne is known for its vibrant arts scene, diverse culture, and love for technology and innovation.
+                Growing up in this dynamic city has given me a unique perspective on how technology intersects with
+                everyday life. The city's renowned coffee culture and love for quality experiences mirror my approach to
+                creating web applications - attention to detail matters.</p>
+        </section>
+
+        <section class="interests">
+            <h2>Interests & Favorites</h2>
+
+            <article class="favorites">
+                <h3>Favorite Movies</h3>
+                <ul>
+                    <li>Interstellar - For its incredible soundtrack and visual experience</li>
+                    <li>Blade Runner 2049 - Amazing atmospheric audio design</li>
+                    <li>The Dark Knight - Perfect balance of story and technical excellence</li>
+                </ul>
+            </article>
+
+            <article class="favorites">
+                <h3>Favorite Music</h3>
+                <ul>
+                    <li>Hans Zimmer - Epic cinematic scores</li>
+                    <li>Daft Punk - Especially their work on Tron: Legacy soundtrack</li>
+                    <li>Classical music for testing audio systems</li>
+                </ul>
+            </article>
+
+            <article class="favorites">
+                <h3>Favorite Books</h3>
+                <ul>
+                    <li>"Don't Make Me Think" by Steve Krug - Web usability</li>
+                    <li>"The Pragmatic Programmer" - Development best practices</li>
+                    <li>"Sound Systems: Design and Optimization" - Audio engineering</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="timetable">
+            <h2>Swinburne Timetable</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00-10:00</td>
+                            <td></td>
+                            <td class="lecture">COS60004 Lecture</td>
+                            <td></td>
+                            <td class="tutorial">COS60004 Tutorial</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00-11:00</td>
+                            <td class="lab">COS60006 Lab</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="lecture">COS60006 Lecture</td>
+                        </tr>
+                        <tr>
+                            <td>11:00-12:00</td>
+                            <td></td>
+                            <td class="tutorial">COS60004 Tutorial</td>
+                            <td class="lecture">COS60004 Lecture</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00-13:00</td>
+                            <td></td>
+                            <td></td>
+                            <td class="lab">COS60004 Lab</td>
+                            <td></td>
+                            <td class="tutorial">COS60004 Tutorial</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+<?php include 'footer.inc'; ?>
