@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
 $host = 'feenix-mariadb.swin.edu.au';
-$user = 's105974087';
+$user = '1111111';
 $password = '070694';
-$database = 's105974087_db';
+$database = '1111111_db';
 
 // Create connection
 $conn = mysqli_connect($host, $user, $password, $database);
