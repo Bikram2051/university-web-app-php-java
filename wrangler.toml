@@ -1,0 +1,10 @@
+name = "echosphere-static"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "echo 'Static files ready'"
+cwd = "."
+
+[build.upload]
+dir = "public"
+format = "service-worker"
