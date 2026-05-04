@@ -173,28 +173,29 @@ nav a {
 }
 
 /* Slide backgrounds */
+/* Hero images: Unsplash (unsplash.com/license) — free for commercial use, no attribution required */
 .slide-1 {
   background-image:
     linear-gradient(rgba(10, 14, 23, 0.7), rgba(10, 14, 23, 0.7)),
-    url('https://images.unsplash.com/photo-1662454420647-3d20ddcdb8f8?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    url('../images/hero-slide-1-immersive-sound.jpg');
 }
 
 .slide-2 {
   background-image:
     linear-gradient(rgba(10, 14, 23, 0.7), rgba(10, 14, 23, 0.7)),
-    url('https://images.unsplash.com/photo-1618609377864-68609b857e90?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    url('../images/hero-slide-2-audio-technology.jpg');
 }
 
 .slide-3 {
   background-image:
     linear-gradient(rgba(10, 14, 23, 0.7), rgba(10, 14, 23, 0.7)),
-    url('https://images.unsplash.com/photo-1691683265558-40add07d0e62?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    url('../images/hero-slide-3-crystal-visuals.jpg');
 }
 
 .slide-4 {
   background-image:
     linear-gradient(rgba(10, 14, 23, 0.7), rgba(10, 14, 23, 0.7)),
-    url('https://images.unsplash.com/photo-1743685889437-210ad44b6c5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    url('../images/hero-slide-4-premium-sound.jpg');
 }
 
 .slide-content {
