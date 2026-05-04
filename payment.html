@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoSphere - Premium Home Theatre Systems</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>EchoSphere</h1>
+                <span>Premium Home Theatre Systems</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="manager.html">Manager</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                    <li><a href="enhancements2.html">JS Enhancements</a></li>
+                    <li><a href="enhancements3.html">PHP Enhancements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Complete Your Purchase</h1>
+
+        <section id="order-summary" class="order-summary">
+            <h2>Order Summary <span style="font-size:0.7em; color:#888; font-weight:normal;">(Demo Data)</span></h2>
+            <div class="summary-content">
+                <div class="customer-details">
+                    <h3>Customer Information</h3>
+                    <p><strong>Name:</strong> Alex Demo</p>
+                    <p><strong>Email:</strong> demo@example.com</p>
+                    <p><strong>Phone:</strong> 0400 000 000</p>
+                    <p><strong>Address:</strong> 123 Demo Street, Melbourne, VIC 3000</p>
+                    <p><strong>Contact Preference:</strong> Email</p>
+                </div>
+                <div class="order-details">
+                    <h3>Order Details</h3>
+                    <p><strong>Product:</strong> Aurora Series</p>
+                    <p><strong>Quantity:</strong> 1</p>
+                    <div class="selected-features">
+                        <strong>Selected Features:</strong>
+                        <ul>
+                            <li>4K Upscaling</li>
+                            <li>Wireless Rear Speakers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-summary">
+                    <h3>Price Summary</h3>
+                    <p><strong>Base Price:</strong> $2,499.00</p>
+                    <p><strong>Additional Features:</strong> $350.00</p>
+                    <p><strong>Quantity:</strong> 1</p>
+                    <p class="total-amount"><strong>Total Amount:</strong> $2,849.00</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="demo-confirmation" style="display:none; text-align:center; padding:3rem 0;">
+            <h2>Order Confirmed!</h2>
+            <p>Thank you for your order. Your EchoSphere system is on its way.</p>
+            <p style="color:#888; font-style:italic; margin-top:0.5rem;">This is a portfolio demo — no real order was placed and no payment was processed.</p>
+            <a href="index.html" class="cta-button" style="display:inline-block; margin-top:1.5rem;">Return to Home</a>
+        </div>
+
+        <form id="payment-form" action="#" method="post" novalidate>
+            <fieldset class="payment-info">
+                <legend>Payment Information</legend>
+
+                <div class="form-group">
+                    <label for="card-type">Credit Card Type:</label>
+                    <select id="card-type" name="card_type" required>
+                        <option value="">Please select</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card_name" maxlength="40" value="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-number">Credit Card Number:</label>
+                    <input type="text" id="card-number" name="card_number" placeholder="1234 5678 9012 3456" value="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-expiry">Expiry Date (MM-YY):</label>
+                    <input type="text" id="card-expiry" name="card_expiry" placeholder="MM-YY" maxlength="5" value="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-cvv">CVV:</label>
+                    <input type="text" id="card-cvv" name="card_cvv" maxlength="3" placeholder="123" value="" required>
+                </div>
+
+            </fieldset>
+
+            <div class="form-submit">
+                <button type="button" id="cancel-order" class="reset-button">Cancel Order</button>
+                <button type="submit" id="check-out-button" class="submit-button">Complete Order</button>
+            </div>
+        </form>
+
+        <script>
+            document.getElementById('payment-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                this.style.display = 'none';
+                document.getElementById('demo-confirmation').style.display = 'block';
+            });
+
+            document.getElementById('cancel-order').addEventListener('click', function() {
+                if (confirm('Are you sure you want to cancel this order?')) {
+                    window.location.href = 'enquire.html';
+                }
+            });
+        </script>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EchoSphere. High-Fidelity Living. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/part2.js"></script>
+    <script src="scripts/enhancements.js"></script>
+</body>
+</html>

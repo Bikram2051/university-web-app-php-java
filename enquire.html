@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoSphere - Premium Home Theatre Systems</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>EchoSphere</h1>
+                <span>Premium Home Theatre Systems</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="manager.html">Manager</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                    <li><a href="enhancements2.html">JS Enhancements</a></li>
+                    <li><a href="enhancements3.html">PHP Enhancements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Product Enquiry</h1>
+
+        <div id="demo-confirmation" style="display:none; text-align:center; padding:3rem 0;">
+            <h2>Enquiry Received!</h2>
+            <p>Thank you for your interest in EchoSphere. Our team will be in touch soon.</p>
+            <p style="color:#888; font-style:italic; margin-top:0.5rem;">This is a portfolio demo — no real enquiry was submitted and no data was stored.</p>
+            <a href="index.html" class="cta-button" style="display:inline-block; margin-top:1.5rem;">Return to Home</a>
+        </div>
+
+        <form id="enquiry-form" action="#" method="post" novalidate>
+            <fieldset class="personal-info">
+                <legend>Personal Information</legend>
+
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" value="">
+                </div>
+            </fieldset>
+
+            <fieldset class="address-info">
+                <legend>Delivery Address</legend>
+
+                <div class="form-group">
+                    <label for="street">Street Address:</label>
+                    <input type="text" id="street" name="street" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="suburb">Suburb/Town:</label>
+                    <input type="text" id="suburb" name="suburb" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state" name="state">
+                        <option value="">Please select</option>
+                        <option value="VIC">Victoria</option>
+                        <option value="NSW">New South Wales</option>
+                        <option value="QLD">Queensland</option>
+                        <option value="NT">Northern Territory</option>
+                        <option value="WA">Western Australia</option>
+                        <option value="SA">South Australia</option>
+                        <option value="TAS">Tasmania</option>
+                        <option value="ACT">Australian Capital Territory</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="postcode" name="postcode" value="">
+                </div>
+            </fieldset>
+
+            <fieldset class="contact-preference">
+                <legend>Preferred Contact Method</legend>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="contact_method" value="email">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contact_method" value="phone">
+                        Phone
+                    </label>
+                    <label>
+                        <input type="radio" name="contact_method" value="post">
+                        Post
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="product-info">
+                <legend>Product Information</legend>
+
+                <div class="form-group">
+                    <label for="product">Product of Interest:</label>
+                    <select id="product" name="product">
+                        <option value="">Please select</option>
+                        <option value="aurora" data-price="2499.00">Aurora Series - $2,499.00</option>
+                        <option value="nexus" data-price="1599.00">Nexus Series - $1,599.00</option>
+                        <option value="essence" data-price="699.00">Essence Series - $699.00</option>
+                    </select>
+                </div>
+
+                <!-- Room Size Audio Planner -->
+                <div class="form-group">
+                    <label for="room-size">Room Size</label>
+                    <select id="room-size" name="room_size">
+                        <option value="">Select your room size</option>
+                        <option value="small">Small (≤ 15 m²)</option>
+                        <option value="medium">Medium (16–25 m²)</option>
+                        <option value="large">Large (26+ m²)</option>
+                    </select>
+                </div>
+                <div id="planner-reco" class="planner-reco" aria-live="polite"></div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input id="quantity" name="quantity" type="text" inputmode="numeric" placeholder="e.g., 1" value="">
+                </div>
+
+                <div class="form-group">
+                    <label>Desired Features (Additional Costs):</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="features[]" value="4k_upscaling" data-price="200">
+                            4K Upscaling (+$200)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features[]" value="wireless_rear" data-price="150">
+                            Wireless Rear Speakers (+$150)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features[]" value="smart_hub" data-price="100">
+                            Smart Hub Integration (+$100)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features[]" value="extended_warranty" data-price="300">
+                            Extended Warranty (+$300)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features[]" value="professional_calibration" data-price="250">
+                            Professional Calibration (+$250)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="price-summary">
+                    <h4>Estimated Total: $<span id="estimated-total">0.00</span></h4>
+                </div>
+            </fieldset>
+
+            <fieldset class="comments">
+                <legend>Additional Comments</legend>
+                <div class="form-group">
+                    <label for="comments">Questions or Special Requirements:</label>
+                    <textarea id="comments" name="comments" rows="5"
+                        placeholder="Please let us know about any specific requirements or questions you have about our products..."></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-submit">
+                <button type="reset" class="reset-button">Reset Form</button>
+                <button type="submit" id="pay-now-button" class="submit-button">Proceed to Payment</button>
+            </div>
+        </form>
+
+        <script>
+            document.getElementById('enquiry-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                this.style.display = 'none';
+                document.getElementById('demo-confirmation').style.display = 'block';
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(() => {
+                    if (document.getElementById('estimated-total')) {
+                        const event = new Event('change');
+                        document.getElementById('product')?.dispatchEvent(event);
+                    }
+                }, 100);
+            });
+        </script>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EchoSphere. High-Fidelity Living. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/part2.js"></script>
+    <script src="scripts/enhancements.js"></script>
+</body>
+</html>

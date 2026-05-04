@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoSphere - Premium Home Theatre Systems</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>EchoSphere</h1>
+                <span>Premium Home Theatre Systems</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="manager.html">Manager</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                    <li><a href="enhancements2.html">JS Enhancements</a></li>
+                    <li><a href="enhancements3.html">PHP Enhancements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>PHP &amp; MySQL Enhancements</h1>
+
+        <section class="enhancement">
+            <h2>Enhancement 1: Advanced Manager Search &amp; Reporting</h2>
+
+            <div class="enhancement-details">
+                <div class="enhancement-info">
+                    <h3>What it does</h3>
+                    <p>Implements a comprehensive search and filtering system for the manager page that allows searching by customer name, product type, order status, with multiple sorting options and real-time status updates.</p>
+
+                    <h3>How it exceeds basic requirements</h3>
+                    <ul>
+                        <li>Multi-criteria search (name, product, status) instead of simple queries</li>
+                        <li>Dynamic sorting by different columns (date, cost, name)</li>
+                        <li>Real-time status updates without page refresh using form auto-submit</li>
+                        <li>Comprehensive order details display with proper data formatting</li>
+                    </ul>
+
+                    <h3>Technical Implementation</h3>
+                    <p>Uses prepared statements with dynamic WHERE clauses, parameter binding for security, and complex SQL queries with multiple JOIN conditions. Implements proper form handling with GET method for bookmarkable/searchable URLs.</p>
+
+                    <h3>Files Modified</h3>
+                    <ul>
+                        <li><code>manager.php</code> - Complete search interface and results display</li>
+                        <li><code>update_order.php</code> - Status update handler</li>
+                        <li><code>cancel_order.php</code> - Order cancellation with validation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="enhancement">
+            <h2>Enhancement 2: Comprehensive Order Management System</h2>
+
+            <div class="enhancement-details">
+                <div class="enhancement-info">
+                    <h3>What it does</h3>
+                    <p>Implements a full order lifecycle management system with status tracking, cancellation rules, and comprehensive order validation.</p>
+
+                    <h3>How it exceeds basic requirements</h3>
+                    <ul>
+                        <li>Four-tier order status system (PENDING → FULFILLED → PAID → ARCHIVED)</li>
+                        <li>Business rule enforcement - only pending orders can be cancelled</li>
+                        <li>Complete order audit trail with timestamps</li>
+                        <li>JSON storage for flexible feature management</li>
+                        <li>State-postcode validation with Australian rules</li>
+                    </ul>
+
+                    <h3>Technical Implementation</h3>
+                    <p>Uses ENUM types for status management, JSON data type for flexible feature storage, complex server-side validation with Australian postcode rules, and proper transaction handling.</p>
+
+                    <h3>Security Features</h3>
+                    <ul>
+                        <li>Prepared statements for all database queries</li>
+                        <li>Input sanitization and validation</li>
+                        <li>Session-based access control</li>
+                        <li>Proper error handling without information disclosure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="enhancement-summary">
+            <h2>Summary</h2>
+            <p>These PHP enhancements demonstrate advanced server-side programming techniques including complex database operations, security best practices, and business rule implementation. The system provides a robust, secure, and user-friendly order management experience that significantly exceeds the basic requirements.</p>
+
+            <p>Both enhancements work together to create a professional-grade e-commerce management system suitable for real-world deployment.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EchoSphere. High-Fidelity Living. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/part2.js"></script>
+    <script src="scripts/enhancements.js"></script>
+</body>
+</html>
