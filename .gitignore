@@ -1,0 +1,10 @@
+# Local configuration — never commit real credentials
+settings.php
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
